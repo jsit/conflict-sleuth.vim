@@ -65,6 +65,7 @@ function! s:PrepWindow(type)
   setlocal cul
   setlocal syntax=off
   silent execute "normal zM"
+  setlocal cursorbind
   if a:type == 'diff'
     diffthis
   else
